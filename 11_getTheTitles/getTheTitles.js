@@ -1,8 +1,17 @@
+// const getTheTitles = function (array) {
+//   let titleArray = [];
+//   for (i = 0; i <= array.length - 1; i++) {
+//     titleArray.push(array[i]["title"]);
+//   }
+//   return titleArray;
+// };
+
+// using Array.filter
 const getTheTitles = function (array) {
   let titleArray = [];
-  for (i = 0; i <= array.length - 1; i++) {
-    titleArray.push(array[i]["title"]);
-  }
+  array.filter((book) => {
+    titleArray.push(book.title);
+  });
   return titleArray;
 };
 
